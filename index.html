@@ -7,18 +7,34 @@
 </head>
 <body>
     <script>
-        var originalString = "Today you are you";
-        var reversedString = "";
-        var strLength = originalString.length;
-
-        for (var i = strLength - 1; i >= 0; i--) {
-            reversedString = reversedString + originalString.charAt(i);
+        function isLeapYear(year) {
+            if (year % 400 === 0) {
+                return true;
+            } 
+            else if (year % 100 === 0) {
+                return false;
+            } 
+            else if (year % 4 === 0) {
+                return true;
+            } 
+            else {
+                return false;
+            }
         }
+
+        var currentYear = 2025;
+        var leapYears = "";
         
-        console.log("Original Message");
-        console.log(originalString);
-        console.log("Reversed String Message");
-        console.log(reversedString);
+        for (var year = 1900; year <= currentYear; year++) {
+            if (isLeapYear(year)) {
+                if (leapYears !== "") {
+                    leapYears = leapYears + ", ";
+                }
+                leapYears = leapYears + year;
+            }
+        }
+        console.log(leapYears);
+
     </script>
 </body>
 </html>
