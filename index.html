@@ -7,33 +7,60 @@
 </head>
 <body>
     <script>
-        function isLeapYear(year) {
-            if (year % 400 === 0) {
-                return true;
-            } 
-            else if (year % 100 === 0) {
-                return false;
-            } 
-            else if (year % 4 === 0) {
-                return true;
-            } 
-            else {
-                return false;
+
+        // Caesar Cipher Implementation
+        var alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+        var shiftAmount = 3;
+        function createShiftedAlphabet() {
+            var shiftedAlphabet = [];
+            for (var i = 0; i < alphabet.length; i++) {
+                var shiftedIndex = (i + shiftAmount) % 26;
+                shiftedAlphabet.push(alphabet[shiftedIndex]);
             }
+            
+            return shiftedAlphabet;
+        }
+        
+        var shiftedAlphabet = createShiftedAlphabet();
+        function encryptMessage(message) {
+            var messageArray = message.toLowerCase().split("");
+            var encryptedArray = [];
+        
+            for (var i = 0; i < messageArray.length; i++) {
+                var char = messageArray[i];
+                var index = alphabet.indexOf(char);
+                if (index !== -1) {
+                    encryptedArray.push(shiftedAlphabet[index]);
+                } else {
+                    encryptedArray.push(char);
+                }
+            }
+            return encryptedArray.join("");
         }
 
-        var currentYear = 2025;
-        var leapYears = "";
-        
-        for (var year = 1900; year <= currentYear; year++) {
-            if (isLeapYear(year)) {
-                if (leapYears !== "") {
-                    leapYears = leapYears + ", ";
+        function decryptMessage(encryptedMessage) {
+            var encryptedArray = encryptedMessage.toLowerCase().split("");
+            var decryptedArray = [];
+
+            for (var i = 0; i < encryptedArray.length; i++) {
+                var char = encryptedArray[i];
+                var index = shiftedAlphabet.indexOf(char);
+
+                if (index !== -1) {
+                    decryptedArray.push(alphabet[index]);
+                } else {
+                    decryptedArray.push(char);
                 }
-                leapYears = leapYears + year;
             }
+            return decryptedArray.join("");
         }
-        console.log(leapYears);
+        
+        var originalMessage = "iamapandabear";
+        var encryptedMessage = encryptMessage(originalMessage);
+        var decryptedMessage = decryptMessage(encryptedMessage);
+        console.log(shiftedAlphabet.join(""));
+        console.log(encryptedMessage);
+        console.log(decryptedMessage);
 
     </script>
 </body>
