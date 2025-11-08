@@ -1,67 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My Hobbies</title>
 </head>
 <body>
-    <script>
-
-        // Caesar Cipher Implementation
-        var alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
-        var shiftAmount = 3;
-        function createShiftedAlphabet() {
-            var shiftedAlphabet = [];
-            for (var i = 0; i < alphabet.length; i++) {
-                var shiftedIndex = (i + shiftAmount) % 26;
-                shiftedAlphabet.push(alphabet[shiftedIndex]);
-            }
-            
-            return shiftedAlphabet;
-        }
-        
-        var shiftedAlphabet = createShiftedAlphabet();
-        function encryptMessage(message) {
-            var messageArray = message.toLowerCase().split("");
-            var encryptedArray = [];
-        
-            for (var i = 0; i < messageArray.length; i++) {
-                var char = messageArray[i];
-                var index = alphabet.indexOf(char);
-                if (index !== -1) {
-                    encryptedArray.push(shiftedAlphabet[index]);
-                } else {
-                    encryptedArray.push(char);
-                }
-            }
-            return encryptedArray.join("");
-        }
-
-        function decryptMessage(encryptedMessage) {
-            var encryptedArray = encryptedMessage.toLowerCase().split("");
-            var decryptedArray = [];
-
-            for (var i = 0; i < encryptedArray.length; i++) {
-                var char = encryptedArray[i];
-                var index = shiftedAlphabet.indexOf(char);
-
-                if (index !== -1) {
-                    decryptedArray.push(alphabet[index]);
-                } else {
-                    decryptedArray.push(char);
-                }
-            }
-            return decryptedArray.join("");
-        }
-        
-        var originalMessage = "iamapandabear";
-        var encryptedMessage = encryptMessage(originalMessage);
-        var decryptedMessage = decryptMessage(encryptedMessage);
-        console.log(shiftedAlphabet.join(""));
-        console.log(encryptedMessage);
-        console.log(decryptedMessage);
-
-    </script>
+    <h1>My Favorite Hobbies</h1>
+    
+    <p>
+        One of my favorite hobbies is reading books. I love getting lost in different worlds and stories that books provide. Reading helps me relax after a long day and expands my knowledge about various topics. I enjoy reading science fiction novels the most because they take me to futuristic worlds and challenge my imagination. Fantasy books are also great because they introduce me to magical realms and epic adventures. Reading has become an essential part of my daily routine, and I try to read for at least thirty minutes every day.
+    </p>
+    
+    <p>
+        Another hobby I really enjoy is playing basketball. Basketball is a great way to stay active and healthy while having fun with friends. I love the fast-paced nature of the game and the teamwork required to succeed. Playing basketball helps me improve my physical fitness and coordination skills. I try to play basketball at least three times a week at the local court. The feeling of making a great shot or winning a close game is incredibly rewarding and keeps me coming back for more.
+    </p>
+    
+    <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=400" alt="Books on a shelf" />
+    
+    <h2>Navigation</h2>
+    <p>
+        <a href="page2.html">Visit My Favorite Foods Page</a>
+    </p>
+    <p>
+        <a href="page3.html">Visit My Future Goals Page</a>
+    </p>
 </body>
 </html>
