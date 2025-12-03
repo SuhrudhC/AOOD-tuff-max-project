@@ -5,8 +5,6 @@
 - Navigation menu with links (Brands, Candles & Home, Full Catalog, New Arrivals, Samples, Clearance, More)
 - Hero section with welcome message
 - Promotional banner
-- Top Deals section (3 product cards)
-- Footer with links
 
 ## File Structure
 - `index.html` - Homepage (~40 lines)
@@ -16,3 +14,5 @@
 ## Next Steps (Day 2)
 - Add product catalog page structure
 - Expand navigation functionality
+- Top Deals section (3 product cards)
+- Footer with links
