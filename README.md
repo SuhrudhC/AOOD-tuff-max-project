@@ -9,9 +9,9 @@
 - Footer with links
 
 ## File Structure
-- `index.html` - Homepage (~70 lines)
-- `css/styles.css` - Basic styling (~150 lines)
-- Total: ~220 lines
+- `index.html` - Homepage (~40 lines)
+- `css/styles.css` - Basic styling (~90 lines)
+- Total: ~130 lines
 
 ## Next Steps (Day 2)
 - Add product catalog page structure
