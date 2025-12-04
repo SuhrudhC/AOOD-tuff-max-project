@@ -16,3 +16,16 @@
 - Expand navigation functionality
 - Top Deals section (3 product cards)
 - Footer with links
+
+---
+
+# Tax Max Fragrances - Day 2 Progress
+
+## What's Done Today
+- Added simple footer with copyright and basic links (Contact, About)
+- Footer styling with dark background matching header
+
+## Code Added
+- Footer HTML: ~5 lines
+- Footer CSS: ~10 lines
+- Total: ~15 lines
