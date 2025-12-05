@@ -11,12 +11,6 @@
 - `css/styles.css` - Basic styling (~90 lines)
 - Total: ~130 lines
 
-## Next Steps (Day 2)
-- Add product catalog page structure
-- Expand navigation functionality
-- Top Deals section (3 product cards)
-- Footer with links
-
 ---
 
 # Tax Max Fragrances - Day 2 Progress
@@ -26,6 +20,20 @@
 - Footer styling with dark background matching header
 
 ## Code Added
-- Footer HTML: ~5 lines
-- Footer CSS: ~10 lines
-- Total: ~15 lines
+- Footer HTML: ~10 lines
+- Footer CSS: ~15 lines
+- Total: ~25 lines
+
+---
+
+# Tax Max Fragrances - Day 3 Progress
+
+## What's Done Today
+- Added Top Deals section with 3 product cards
+- Each product card displays name, and "Add to Cart" button
+- Responsive grid layout that adapts to different screen sizes
+
+## Code Added
+- Top Deals HTML: ~20 lines
+- Top Deals CSS: ~60 lines
+- Total: ~80 lines
