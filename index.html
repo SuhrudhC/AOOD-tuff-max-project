@@ -39,78 +39,127 @@
     <section class="top-deals">
         <h3>Featured Brand:</h3>
         <h2>Ferda Fragrances</h2>
+        
+        <!-- Filter Bar -->
+        <div class="filter-bar">
+            <div class="filter-left">
+                <span class="filter-label">Filter:</span>
+                <select id="ferdaLevelFilter" class="filter-dropdown">
+                    <option value="all">All Levels</option>
+                    <option value="1">Ferda Level 1 (0-100)</option>
+                    <option value="2">Ferda Level 2 (101-250)</option>
+                    <option value="3">Ferda Level 3 (251-400)</option>
+                    <option value="4">Ferda Level 4 (401-600)</option>
+                    <option value="5">Ferda Level 5 (600+)</option>
+                </select>
+            </div>
+            <div class="filter-right">
+                <span class="filter-label">Sort by:</span>
+                <select id="sortFilter" class="filter-dropdown">
+                    <option value="default">Best selling</option>
+                    <option value="price-low">Price: Low to High</option>
+                    <option value="price-high">Price: High to Low</option>
+                </select>
+                <span class="product-count" id="productCount">12 products</span>
+            </div>
+        </div>
+        
         <div class="products-grid">
-            <div class="product-card">
-                <img src="images/fragrance1.jpg" alt="Fragrance 1" class="product-image">
-                <h3>AJ Huelskamp</h3>
+            <div class="product-card" data-price="659.99" data-level="5">
+                <div class="bottle-container bottle-mfk">
+                    <img src="images/fragrance1.jpg" alt="Fragrance 1" class="product-image">
+                </div>
+                <h3>AJ Huelskamp, 2.4 oz</h3>
                 <p class="price">$659.99 <span>$749.99</span></p>
-                <button class="btn-product">Add to Cart</button>
+                <button class="btn-product">Learn More</button>
             </div>
-            <div class="product-card">
-                <img src="images/Screenshot 2025-12-08 at 2.15.41 PM.png" alt="Fragrance 2" class="product-image">
-                <h3>Shujia Zhang</h3>
+            <div class="product-card" data-price="24.99" data-level="1">
+                <div class="bottle-container bottle-silver">
+                    <img src="images/Screenshot 2025-12-08 at 2.15.41 PM.png" alt="Fragrance 2" class="product-image">
+                </div>
+                <h3>Shujia Zhang, 2.4 oz</h3>
                 <p class="price">$24.99 <span>$39.99</span></p>
-                <button class="btn-product">Add to Cart</button>
+                <button class="btn-product">Learn More</button>
             </div>
-            <div class="product-card">
-                <img src="images/Screenshot 2025-12-08 at 2.15.19 PM.png" alt="Fragrance 3" class="product-image">
-                <h3>Gabriel Summerfield</h3>
+            <div class="product-card" data-price="790.00" data-level="5">
+                <div class="bottle-container bottle-mfk">
+                    <img src="images/Screenshot 2025-12-08 at 2.15.19 PM.png" alt="Fragrance 3" class="product-image">
+                </div>
+                <h3>Gabriel Summerfield, 2.4 oz</h3>
                 <p class="price">$790.00</p>
-                <button class="btn-product">Add to Cart</button>
+                <button class="btn-product">Learn More</button>
             </div>
-            <div class="product-card">
-                <img src="images/Screenshot 2025-12-08 at 2.14.52 PM.png" alt="Fragrance 4" class="product-image">
-                <h3>Sid Thomas</h3>
+            <div class="product-card" data-price="459.99" data-level="4">
+                <div class="bottle-container bottle-satin">
+                    <img src="images/Screenshot 2025-12-08 at 2.14.52 PM.png" alt="Fragrance 4" class="product-image">
+                </div>
+                <h3>Sid Thomas, 2.4 oz</h3>
                 <p class="price">$459.99 <span>$529.99</span></p>
-                <button class="btn-product">Add to Cart</button>
+                <button class="btn-product">Learn More</button>
             </div>
-            <div class="product-card">
-                <img src="images/Screenshot 2025-12-08 at 2.32.31 PM.png" alt="Fragrance 5" class="product-image">
-                <h3>Jackson Easley</h3>
+            <div class="product-card" data-price="209.99" data-level="2">
+                <div class="bottle-container bottle-gold">
+                    <img src="images/Screenshot 2025-12-08 at 2.32.31 PM.png" alt="Fragrance 5" class="product-image">
+                </div>
+                <h3>Jackson Easley, 2.4 oz</h3>
                 <p class="price">$209.99 <span>$249.99</span></p>
-                <button class="btn-product">Add to Cart</button>
+                                    <button class="btn-product">Learn More</button>
             </div>
-            <div class="product-card">
-                <img src="images/fragrance6.jpg" alt="Fragrance 6" class="product-image">
-                <h3>Ferda Elite</h3>
-                <p class="price">$129.99 <span>$149.99</span></p>
-                <button class="btn-product">Add to Cart</button>
+            <div class="product-card" data-price="289.99" data-level="3">
+                <div class="bottle-container bottle-grand">
+                    <img src="images/Screenshot 2025-12-08 at 9.35.41 PM.png" alt="Fragrance 6" class="product-image">
+                </div>
+                <h3>Aykhan Salimov, 2.4 oz</h3>
+                <p class="price">$289.99 <span>$349.99</span></p>
+                <button class="btn-product">Learn More</button>
             </div>
-            <div class="product-card">
-                <img src="images/fragrance7.jpg" alt="Fragrance 7" class="product-image">
-                <h3>Ferda Luxe</h3>
-                <p class="price">$89.99 <span>$119.99</span></p>
-                <button class="btn-product">Add to Cart</button>
+            <div class="product-card" data-price="129.99" data-level="2">
+                <div class="bottle-container bottle-gold">
+                    <img src="images/Screenshot 2025-12-08 at 9.35.56 PM.png" alt="Fragrance 7" class="product-image">
+                </div>
+                <h3>Yiannis Docuto, 2.4 oz</h3>
+                <p class="price">$129.99 <span>$169.99</span></p>
+                <button class="btn-product">Learn More</button>
             </div>
-            <div class="product-card">
-                <img src="images/fragrance8.jpg" alt="Fragrance 8" class="product-image">
-                <h3>Ferda Signature</h3>
+            <div class="product-card" data-price="59.99" data-level="1">
+                <div class="bottle-container bottle-silver">
+                    <img src="images/fragrance8.jpg" alt="Fragrance 8" class="product-image">
+                </div>
+                <h3>Ferda Signature, 2.4 oz</h3>
                 <p class="price">$59.99 <span>$79.99</span></p>
-                <button class="btn-product">Add to Cart</button>
+                <button class="btn-product">Learn More</button>
             </div>
-            <div class="product-card">
-                <img src="images/fragrance9.jpg" alt="Fragrance 9" class="product-image">
-                <h3>Ferda Supreme</h3>
-                <p class="price">$99.99 <span>$129.99</span></p>
-                <button class="btn-product">Add to Cart</button>
+            <div class="product-card" data-price="9.99" data-level="1">
+                <div class="bottle-container bottle-silver">
+                    <img src="images/fragrance9.jpg" alt="Fragrance 9" class="product-image">
+                </div>
+                <h3>Ferda Supreme, 2.4 oz</h3>
+                <p class="price">$9.99 <span>$19.99</span></p>
+                <button class="btn-product">Learn More</button>
             </div>
-            <div class="product-card">
-                <img src="images/fragrance10.jpg" alt="Fragrance 10" class="product-image">
-                <h3>Ferda Ultimate</h3>
-                <p class="price">$99.99 <span>$129.99</span></p>
-                <button class="btn-product">Add to Cart</button>
+            <div class="product-card" data-price="9.99" data-level="1">
+                <div class="bottle-container bottle-silver">
+                    <img src="images/fragrance10.jpg" alt="Fragrance 10" class="product-image">
+                </div>
+                <h3>Ferda Ultimate, 2.4 oz</h3>
+                <p class="price">$9.99 <span>$19.99</span></p>
+                <button class="btn-product">Learn More</button>
             </div>
-            <div class="product-card">
-                <img src="images/fragrance11.jpg" alt="Fragrance 11" class="product-image">
-                <h3>Ferda Max</h3>
-                <p class="price">$99.99 <span>$129.99</span></p>
-                <button class="btn-product">Add to Cart</button>
+            <div class="product-card" data-price="9.99" data-level="1">
+                <div class="bottle-container bottle-silver">
+                    <img src="images/fragrance11.jpg" alt="Fragrance 11" class="product-image">
+                </div>
+                <h3>Ferda Max, 2.4 oz</h3>
+                <p class="price">$9.99 <span>$19.99</span></p>
+                <button class="btn-product">Learn More</button>
             </div>
-            <div class="product-card">
-                <img src="images/fragrance12.jpg" alt="Fragrance 12" class="product-image">
-                <h3>Ferda Godly</h3>
-                <p class="price">$99.99 <span>$129.99</span></p>
-                <button class="btn-product">Add to Cart</button>
+            <div class="product-card" data-price="9.99" data-level="1">
+                <div class="bottle-container bottle-silver">
+                    <img src="images/fragrance12.jpg" alt="Fragrance 12" class="product-image">
+                </div>
+                <h3>Ferda Godly, 2.4 oz</h3>
+                <p class="price">$9.99 <span>$19.99</span></p>
+                <button class="btn-product">Learn More</button>
             </div>
         </div>
     </section>
@@ -119,5 +168,6 @@
         <p>&copy; 2025 Tax Max Fragrances. All rights reserved.</p>
         <p><a href="#contact">Contact</a> | <a href="#about">About</a></p>
     </footer>
+    <script src="js/filter.js"></script>
 </body>
 </html>
