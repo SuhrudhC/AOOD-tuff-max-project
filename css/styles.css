@@ -46,7 +46,7 @@ nav {
     opacity: 0.8;
 }
 
-/* Hero Section */
+/* Hero */
 .hero {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
@@ -59,11 +59,6 @@ nav {
     margin-bottom: 1rem;
 }
 
-.hero p {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
-}
-
 .btn {
     display: inline-block;
     background: #e74c3c;
@@ -73,11 +68,6 @@ nav {
     border-radius: 5px;
 }
 
-.btn:hover {
-    background: #c0392b;
-}
-
-/* Promo Banner */
 .promo {
     background: #f39c12;
     color: white;
@@ -85,7 +75,7 @@ nav {
     padding: 1rem;
 }
 
-/* Top Deals Section */
+/* Featured Brand */
 .top-deals {
     max-width: 1200px;
     margin: 3rem auto;
@@ -94,74 +84,43 @@ nav {
 }
 
 .top-deals h3 {
-    text-align: center;
     font-size: 1.8rem;
-    font-weight: 600;
     margin-bottom: 0.5rem;
     color: #666;
-    letter-spacing: 1px;
 }
 
 .top-deals h2 {
-    text-align: center;
     font-size: 3.5rem;
     font-weight: 700;
-    margin-bottom: 2.5rem;
-    color: #2c3e50;
-    letter-spacing: 2px;
-    text-transform: uppercase;
+    margin-bottom: 2rem;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     background-clip: text;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+    -webkit-text-fill-color: transparent;
 }
 
 /* Filter Bar */
 .filter-bar {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     padding: 1rem 0;
     margin-bottom: 2rem;
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .filter-left, .filter-right {
     display: flex;
-    align-items: center;
     gap: 0.75rem;
-}
-
-.filter-label {
-    color: #333;
-    font-size: 0.95rem;
-    font-weight: normal;
+    align-items: center;
 }
 
 .filter-dropdown {
     padding: 6px 28px 6px 10px;
     border: 1px solid #ccc;
     border-radius: 3px;
-    background: white;
-    color: #333;
-    font-size: 0.9rem;
-    cursor: pointer;
     appearance: none;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='0 0 10 10'%3E%3Cpath fill='%23333' d='M5 7L1 3h8z'/%3E%3C/svg%3E");
     background-repeat: no-repeat;
     background-position: right 8px center;
-}
-
-.filter-dropdown:hover {
-    border-color: #999;
-}
-
-.filter-dropdown:focus {
-    outline: none;
-    border-color: #667eea;
 }
 
 .product-count {
@@ -170,12 +129,7 @@ nav {
     margin-left: 1rem;
 }
 
-.product-card.hidden {
-    display: none;
-}
-
-
-
+/* Products */
 .products-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -191,6 +145,10 @@ nav {
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
+.product-card.hidden {
+    display: none;
+}
+
 .bottle-container {
     position: relative;
     width: 100%;
@@ -198,90 +156,15 @@ nav {
     margin-bottom: 1rem;
     background-size: 150%;
     background-repeat: no-repeat;
-    background-position: center center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background-position: center;
     overflow: hidden;
 }
 
-.bottle-silver {
-    background-image: url('../images/Gentle Fluidity Silver.jpg');
-    background-size: 94.5%;
-}
-
-.bottle-silver .product-image {
-    width: 54%;
-}
-
-.bottle-gold {
-    background-image: url('../images/Gentle fluidity gold.png');
-    background-size: 134%;
-    position: relative;
-}
-
-.bottle-gold::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 40px;
-    background: white;
-    z-index: 5;
-}
-
-.bottle-gold::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 40px;
-    background: white;
-    z-index: 5;
-}
-
-.bottle-gold .product-image {
-    width: 54%;
-    top: 62%;
-    left: 49%;
-}
-
-
-.bottle-grand {
-    background-image: url('../images/Grand Soir.jpg');
-    background-size: 102%;
-    background-position: center 41%;
-}
-
-.bottle-grand .product-image {
-    width: 53%;
-    top: 61.25%;
-    left: 51%;
-}
-
-.bottle-satin {
-    background-image: url('../images/Satin Mood Extrait de Parfum.webp');
-    background-size: 161%;
-    background-position: center 55%;
-
-}
-
-.bottle-satin .product-image {
-    width: 53%;
-    top: 62.6%;
-    left: 49.7%;
-}
-
-.bottle-mfk {
-    background-image: url('../images/Mfk Fragrance Bottle 80.webp');
-    background-size: 150%;
-}
-
-.bottle-mfk .product-image {
-    width: 52.5%;
-}
+.bottle-silver { background-image: url('../images/Gentle Fluidity Silver.jpg'); background-size: 94.5%; }
+.bottle-gold { background-image: url('../images/Gentle fluidity gold.png'); background-size: 133%; }
+.bottle-grand { background-image: url('../images/Grand Soir.jpg'); background-size: 120%; }
+.bottle-satin { background-image: url('../images/Satin Mood Extrait de Parfum.webp'); background-size: 161%; }
+.bottle-mfk { background-image: url('../images/Mfk Fragrance Bottle 80.webp'); background-size: 150%; }
 
 .product-image {
     position: absolute;
@@ -294,16 +177,19 @@ nav {
     transform: translate(-50%, -50%);
     z-index: 1;
     border: 1px solid #d4af37;
-    box-shadow: 0 0 3px rgba(212, 175, 55, 0.3);
 }
+
+.bottle-silver .product-image { width: 54%; }
+.bottle-gold .product-image { width: 54%; top: 62%; left: 49%; }
+.bottle-grand .product-image { width: 53%; top: 61.25%; left: 51%; }
+.bottle-satin .product-image { width: 53%; top: 62.6%; left: 49.7%; }
+.bottle-mfk .product-image { width: 52.5%; }
 
 .product-card h3 {
     margin-bottom: 1rem;
     color: #2c3e50;
     font-size: 1.2rem;
     font-weight: bold;
-    text-transform: none;
-    letter-spacing: normal;
 }
 
 .price {
@@ -329,11 +215,27 @@ nav {
     cursor: pointer;
     margin-top: 1rem;
     width: 100%;
+    text-decoration: none;
+    display: block;
+    text-align: center;
 }
 
 .btn-product:hover {
     background: #34495e;
 }
+
+.bottle-gold::before, .bottle-gold::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background: white;
+    z-index: 5;
+}
+
+.bottle-gold::before { top: 0; }
+.bottle-gold::after { bottom: 0; }
 
 /* Footer */
 footer {
@@ -349,8 +251,70 @@ footer a {
     text-decoration: none;
 }
 
-footer a:hover {
-    text-decoration: underline;
+/* Product Detail */
+.product-simple {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    margin-top: 2rem;
+}
+
+.bottle-container-detail {
+    height: 400px;
+}
+
+.bottle-container-detail.bottle-silver { background-image: url('../images/Gentle Fluidity Silver.jpg'); background-size: 94.5%; }
+.bottle-container-detail.bottle-gold { background-image: url('../images/Gentle fluidity gold.png'); background-size: 133%; }
+.bottle-container-detail.bottle-grand { background-image: url('../images/Grand Soir.jpg'); background-size: 120%; }
+.bottle-container-detail.bottle-satin { background-image: url('../images/Satin Mood Extrait de Parfum.webp'); background-size: 161%; }
+.bottle-container-detail.bottle-mfk { background-image: url('../images/Mfk Fragrance Bottle 80.webp'); background-size: 150%; }
+
+.product-main-image {
+    position: absolute;
+    width: 52.5%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 2px;
+    top: 62%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    border: 1px solid #d4af37;
+}
+
+.product-info-simple h1 {
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.product-info-simple .product-price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.product-info-simple .product-description {
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
+.btn-add-cart {
+    padding: 15px 30px;
+    background: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+}
+
+.btn-add-cart:hover {
+    background: #c0392b;
 }
 
 /* Responsive */
@@ -359,8 +323,13 @@ footer a:hover {
         flex-direction: column;
         gap: 1rem;
     }
-    
     .hero h1 {
         font-size: 2rem;
+    }
+    .products-grid {
+        grid-template-columns: 1fr;
+    }
+    .product-simple {
+        grid-template-columns: 1fr;
     }
 }
