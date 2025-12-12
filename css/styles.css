@@ -260,7 +260,14 @@ footer a {
 }
 
 .bottle-container-detail {
-    height: 400px;
+    position: relative;
+    width: 100%;
+    height: 350px;
+    margin-bottom: 1rem;
+    background-size: 150%;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
 }
 
 .bottle-container-detail.bottle-silver { background-image: url('../images/Gentle Fluidity Silver.jpg'); background-size: 94.5%; }
@@ -281,6 +288,12 @@ footer a {
     z-index: 1;
     border: 1px solid #d4af37;
 }
+
+.bottle-container-detail.bottle-silver .product-main-image { width: 54%; }
+.bottle-container-detail.bottle-gold .product-main-image { width: 54%; top: 62%; left: 49%; }
+.bottle-container-detail.bottle-grand .product-main-image { width: 53%; top: 61.25%; left: 51%; }
+.bottle-container-detail.bottle-satin .product-main-image { width: 53%; top: 62.6%; left: 49.7%; }
+.bottle-container-detail.bottle-mfk .product-main-image { width: 52.5%; }
 
 .product-info-simple h1 {
     font-size: 2rem;
