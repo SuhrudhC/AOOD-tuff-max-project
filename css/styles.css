@@ -48,24 +48,58 @@ nav {
 
 /* Hero */
 .hero {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
     color: white;
     text-align: center;
-    padding: 5rem 2rem;
+    padding: 6rem 2rem 8rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 20% 50%, rgba(230, 180, 100, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(150, 120, 180, 0.15) 0%, transparent 50%);
+    pointer-events: none;
 }
 
 .hero h1 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
+    position: relative;
+    z-index: 1;
+}
+
+.hero p {
+    position: relative;
+    z-index: 1;
 }
 
 .btn {
     display: inline-block;
-    background: #e74c3c;
+    background: linear-gradient(135deg, #d4af37 0%, #aa8b2f 100%);
     color: white;
     padding: 12px 30px;
     text-decoration: none;
     border-radius: 5px;
+    margin-top: 2.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    z-index: 1;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(212, 175, 55, 0.4);
 }
 
 .promo {
