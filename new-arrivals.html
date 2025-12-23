@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Arrivals - Tax Max Fragrances</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">Tax Max Fragrances</a>
+            <ul class="nav-menu">
+                <li><a href="brands.html">Brands</a></li>
+                <li><a href="candles-home.html">Candles & Home</a></li>
+                <li><a href="catalog.html">Full Catalog</a></li>
+                <li><a href="new-arrivals.html">New Arrivals</a></li>
+                <li><a href="samples.html">Samples</a></li>
+                <li><a href="clearance.html">Clearance</a></li>
+                <li><a href="checkout.html">Checkout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="brand-page">
+        <h1 class="brand-name-title">New Arrivals</h1>
+        
+        <div class="brand-description">
+            <p>Discover our latest fragrance additions! These new arrivals bring fresh scents and exciting options to our collection. Each fragrance is carefully selected to offer something unique and special.</p>
+            <p>From fresh and vibrant everyday scents to bold and sophisticated fragrances, our new arrivals represent the best of what's new in the world of perfumes.</p>
+        </div>
+
+        <div class="filter-bar">
+            <div class="filter-left">
+                <span class="filter-label">Filter:</span>
+                <select id="priceFilter" class="filter-dropdown">
+                    <option value="all">All Prices</option>
+                    <option value="0-100">$0 - $100</option>
+                    <option value="101-250">$101 - $250</option>
+                    <option value="251-400">$251 - $400</option>
+                    <option value="401-600">$401 - $600</option>
+                    <option value="600+">$600+</option>
+                </select>
+            </div>
+            <div class="filter-right">
+                <span class="filter-label">Sort by:</span>
+                <select id="sortFilter" class="filter-dropdown">
+                    <option value="default">Best selling</option>
+                    <option value="price-low">Price: Low to High</option>
+                    <option value="price-high">Price: High to Low</option>
+                    <option value="name-asc">Name: A to Z</option>
+                    <option value="name-desc">Name: Z to A</option>
+                </select>
+                <span class="product-count" id="productCount">4 products</span>
+            </div>
+        </div>
+
+        <div class="products-grid">
+            <div class="product-card" data-price="39.99" data-level="1" data-brand="ferda">
+                <div class="bottle-container bottle-silver">
+                    <img src="images/Screenshot 2025-12-22 at 8.41.26 PM.png" alt="Mason Mosher" class="product-image">
+                </div>
+                <h3>Mason Mosher, 2.4 oz</h3>
+                <p class="price">$39.99 <span>$59.99</span></p>
+                <a href="product.html?id=mason-mosher" class="btn-product">Learn More</a>
+            </div>
+            <div class="product-card" data-price="209.99" data-level="2" data-brand="ferda">
+                <div class="bottle-container bottle-gold">
+                    <img src="images/Screenshot 2025-12-08 at 2.32.31 PM.png" alt="Jackson Easley" class="product-image">
+                </div>
+                <h3>Jackson Easley, 2.4 oz</h3>
+                <p class="price">$209.99 <span>$249.99</span></p>
+                <a href="product.html?id=jackson-easley" class="btn-product">Learn More</a>
+            </div>
+            <div class="product-card" data-price="279.99" data-level="3" data-brand="ferda">
+                <div class="bottle-container bottle-grand">
+                    <img src="images/Screenshot 2025-12-22 at 8.39.47 PM.png" alt="Haroon Mustafa" class="product-image">
+                </div>
+                <h3>Haroon Mustafa, 2.4 oz</h3>
+                <p class="price">$279.99 <span>$299.99</span></p>
+                <a href="product.html?id=haroon-mustafa" class="btn-product">Learn More</a>
+            </div>
+            <div class="product-card" data-price="459.99" data-level="4" data-brand="ferda">
+                <div class="bottle-container bottle-satin">
+                    <img src="images/Screenshot 2025-12-08 at 2.14.52 PM.png" alt="Sid Thomas" class="product-image">
+                </div>
+                <h3>Sid Thomas, 2.4 oz</h3>
+                <p class="price">$459.99 <span>$529.99</span></p>
+                <a href="product.html?id=sid-thomas" class="btn-product">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Tax Max Fragrances. All rights reserved.</p>
+        <p><a href="contact.html">Contact</a> | <a href="about.html">About</a></p>
+    </footer>
+    <script src="js/new-arrivals-filter.js"></script>
+    <script src="js/image-fallback.js"></script>
+</body>
+</html>
+

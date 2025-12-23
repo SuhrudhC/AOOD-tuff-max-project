@@ -29,6 +29,12 @@ nav {
 .logo {
     font-size: 1.5rem;
     font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.logo:hover {
+    opacity: 0.8;
 }
 
 .nav-menu {
@@ -166,7 +172,7 @@ nav {
 /* Products */
 .products-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 2rem;
 }
 
@@ -177,6 +183,7 @@ nav {
     padding: 1.5rem;
     text-align: center;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    width: 100%;
 }
 
 .product-card.hidden {
@@ -196,8 +203,8 @@ nav {
 
 .bottle-silver { background-image: url('../images/Gentle Fluidity Silver.jpg'); background-size: 94.5%; }
 .bottle-gold { background-image: url('../images/Gentle fluidity gold.png'); background-size: 133%; }
-.bottle-grand { background-image: url('../images/Grand Soir.jpg'); background-size: 120%; }
-.bottle-satin { background-image: url('../images/Satin Mood Extrait de Parfum.webp'); background-size: 161%; }
+.bottle-grand { background-image: url('../images/Grand Soir.jpg'); background-size: 102.5% !important; background-position: center 35% !important; }
+.bottle-container.bottle-satin { background-image: url('../images/Satin Mood Extrait de Parfum.webp'); background-size: 161% !important; background-position: 50% 55.5% !important; }
 .bottle-mfk { background-image: url('../images/Mfk Fragrance Bottle 80.webp'); background-size: 150%; }
 
 .product-image {
@@ -215,7 +222,7 @@ nav {
 
 .bottle-silver .product-image { width: 54%; }
 .bottle-gold .product-image { width: 54%; top: 62%; left: 49%; }
-.bottle-grand .product-image { width: 53%; top: 61.25%; left: 51%; }
+.bottle-grand .product-image { width: 56%; top: 61.25%; left: 51%; }
 .bottle-satin .product-image { width: 53%; top: 62.6%; left: 49.7%; }
 .bottle-mfk .product-image { width: 52.5%; }
 
@@ -401,16 +408,26 @@ footer a {
 /* Product Detail */
 .product-simple {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: minmax(280px, 400px) 1fr;
     gap: 3rem;
     margin-top: 2rem;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+}
+
+.product-image-simple {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 .bottle-container-detail {
     position: relative;
     width: 100%;
-    max-width: 320px;
-    height: 350px;
+    max-width: 225px;
+    height: 280px;
     margin: 0 auto 1rem;
     background-size: 150%;
     background-repeat: no-repeat;
@@ -419,14 +436,14 @@ footer a {
 }
 
 .bottle-container-detail.bottle-silver { background-image: url('../images/Gentle Fluidity Silver.jpg'); background-size: 94.5%; }
-.bottle-container-detail.bottle-gold { background-image: url('../images/Gentle fluidity gold.png'); background-size: 133%; }
-.bottle-container-detail.bottle-grand { background-image: url('../images/Grand Soir.jpg'); background-size: 120%; }
-.bottle-container-detail.bottle-satin { background-image: url('../images/Satin Mood Extrait de Parfum.webp'); background-size: 161%; }
+.bottle-container-detail.bottle-gold { background-image: url('../images/Gentle fluidity gold.png'); background-size: 103%; }
+.bottle-container-detail.bottle-grand { background-image: url('../images/Grand Soir.jpg'); background-size: 102.5% !important; background-position: center 35% !important; }
+.bottle-container-detail.bottle-satin { background-image: url('../images/Satin Mood Extrait de Parfum.webp'); background-size: 161% !important; background-position: 50% 55.5% !important; }
 .bottle-container-detail.bottle-mfk { background-image: url('../images/Mfk Fragrance Bottle 80.webp'); background-size: 150%; }
 
 .product-main-image {
     position: absolute;
-    width: 52.5%;
+    width: 60%;
     aspect-ratio: 1 / 1;
     object-fit: cover;
     border-radius: 2px;
@@ -437,11 +454,97 @@ footer a {
     border: 1px solid #d4af37;
 }
 
-.bottle-container-detail.bottle-silver .product-main-image { width: 54%; }
-.bottle-container-detail.bottle-gold .product-main-image { width: 54%; top: 62%; left: 49%; }
-.bottle-container-detail.bottle-grand .product-main-image { width: 53%; top: 61.25%; left: 51%; }
-.bottle-container-detail.bottle-satin .product-main-image { width: 53%; top: 62.6%; left: 49.7%; }
-.bottle-container-detail.bottle-mfk .product-main-image { width: 52.5%; }
+.bottle-container-detail.bottle-silver .product-main-image { width: 61%; }
+.bottle-container-detail.bottle-gold .product-main-image { width: 61%; top: 62%; left: 49%; }
+.bottle-container-detail.bottle-grand .product-main-image { width: 62%; top: 61.25%; left: 51%; }
+.bottle-container-detail.bottle-satin .product-main-image { width: 60%; top: 62.6%; left: 49.7%; }
+.bottle-container-detail.bottle-mfk .product-main-image { width: 52.5%; top: 66%; }
+
+/* Individual Product Front-Facing Screenshot Styling */
+/* You can customize each product's image separately by editing these rules */
+
+/* AJ Huelskamp */
+.product-aj-huelskamp {
+    /* Example: width: 55%; top: 65%; left: 50%; */
+}
+
+/* Shujia Zhang */
+.product-shujia-zhang {
+    width: 40%;
+    top: 65%;
+    left: 50%;
+    border-radius: 4px;
+}
+
+/* Gabriel Summerfield */
+.product-gabriel-summerfield {
+    /* Example: width: 54%; top: 67%; left: 50%; */
+}
+
+/* Sid Thomas */
+.bottle-container-detail.bottle-satin .product-main-image.product-sid-thomas {
+    width: 57% !important;
+    top: 63%;
+    left: 50.5%;
+    border-radius: 4px;
+}
+
+/* Jackson Easley */
+.bottle-container-detail.bottle-gold .product-main-image.product-jackson-easley {
+    width: 47% !important;
+    top: 62.5%;
+    left: 49.5%;
+    border-radius: 4px;
+}
+
+/* Aykhan Salimov */
+.bottle-container-detail.bottle-grand .product-main-image.product-aykhan-salimov {
+    width: 57% !important;
+    top: 68%;
+    left: 50.5%;
+    border-radius: 4px;
+}
+
+/* Yiannis Docuto */
+.bottle-container-detail.bottle-gold .product-main-image.product-yiannis-docuto {
+    width: 47% !important;
+    top: 62.5%;
+    left: 49.5%;
+    border-radius: 4px;
+}
+
+/* Ferda Signature */
+.product-mason-mosher {
+    width: 40%;
+    top: 65%;
+    left: 50%;
+    border-radius: 4px;
+}
+
+.bottle-container-detail.bottle-grand .product-main-image.product-michael-jiang {
+    width: 57% !important;
+    top: 68%;
+    left: 50.5%;
+    border-radius: 4px;
+}
+
+/* Ferda Ultimate */
+.product-ferda-ultimate {
+    /* Example: width: 61%; top: 62%; left: 50%; */
+}
+
+/* Ferda Max */
+.product-ferda-max {
+    /* Example: width: 61%; top: 62%; left: 50%; */
+}
+
+/* Ferda Godly */
+.bottle-container-detail.bottle-grand .product-main-image.product-haroon-mustafa {
+    width: 57% !important;
+    top: 68%;
+    left: 50.5%;
+    border-radius: 4px;
+}
 
 .product-info-simple h1 {
     font-size: 2rem;
@@ -484,7 +587,186 @@ footer a {
     background: #c0392b;
 }
 
+/* Checkout Page */
+.checkout-page {
+    max-width: 1200px;
+    margin: 3rem auto;
+    padding: 0 20px;
+}
+
+.checkout-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    color: #2c3e50;
+    text-align: center;
+}
+
+.checkout-content {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 3rem;
+    margin-top: 2rem;
+}
+
+.checkout-summary {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 2rem;
+    height: fit-content;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.checkout-summary h2 {
+    font-size: 1.5rem;
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #eee;
+}
+
+.cart-items {
+    margin-bottom: 2rem;
+    min-height: 200px;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+.cart-item:last-child {
+    border-bottom: none;
+}
+
+.cart-item-info h3 {
+    font-size: 1rem;
+    color: #2c3e50;
+    margin-bottom: 0.25rem;
+}
+
+.cart-item-info p {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.cart-item-price {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #e74c3c;
+}
+
+.empty-cart {
+    text-align: center;
+    color: #999;
+    padding: 2rem;
+    font-style: italic;
+}
+
+.order-totals {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 2px solid #eee;
+}
+
+.total-line {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.75rem;
+    font-size: 1rem;
+    color: #666;
+}
+
+.total-line.total-final {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 2px solid #eee;
+}
+
+.checkout-form {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.checkout-form h2 {
+    font-size: 1.5rem;
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #eee;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #2c3e50;
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #667eea;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.btn-checkout {
+    width: 100%;
+    padding: 15px 30px;
+    background: linear-gradient(135deg, #d4af37 0%, #aa8b2f 100%);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    margin-top: 1.5rem;
+    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-checkout:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(212, 175, 55, 0.4);
+}
+
 /* Responsive */
+@media (max-width: 1024px) {
+    .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 @media (max-width: 768px) {
     .nav-menu {
         flex-direction: column;
@@ -497,6 +779,12 @@ footer a {
         grid-template-columns: 1fr;
     }
     .product-simple {
+        grid-template-columns: 1fr;
+    }
+    .checkout-content {
+        grid-template-columns: 1fr;
+    }
+    .form-row {
         grid-template-columns: 1fr;
     }
 }

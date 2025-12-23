@@ -11,7 +11,7 @@
 - `css/styles.css` - Basic styling (~90 lines)
 - Total: ~130 lines
 
----
+
 
 # Tax Max Fragrances - Day 2 Progress
 
@@ -24,7 +24,7 @@
 - Footer CSS: ~15 lines
 - Total: ~25 lines
 
----
+
 
 # Tax Max Fragrances - Day 3 Progress
 
@@ -38,7 +38,7 @@
 - Top Deals CSS: ~60 lines
 - Total: ~80 lines
 
----
+
 
 # Recent Development Progress (Last 5 Commits)
 
